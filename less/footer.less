@@ -1,9 +1,21 @@
-.il-maincontrols-footer .il-footer-permanent-url {
-  border-bottom: @tax-il-footer-permanent-url-border-bottom;
-  margin-right: @tax-il-footer-permanent-url-margin-right;
-}
+.il-maincontrols-footer {
+  .il-footer-text {
+    font-size: @tax-il-footer-text-font-size;
+    padding: @tax-il-footer-text-padding;
+    color: @tax-il-footer-text-color;
+  }
 
+  .il-footer-permanent-url {
+    border-bottom: @tax-il-footer-permanent-url-border-bottom;
+    margin-right: @tax-il-footer-permanent-url-margin-right;
+  }
 
-.il-maincontrols-footer .il-footer-text {
-  color: @tax-il-footer-text-color;
+  .il-footer-content .il-footer-links{
+    color: @tax-il-footer-text-color;
+
+    a:hover {
+      color: @tax-il-footer-link-hover;
+    }
+  }
+
 }

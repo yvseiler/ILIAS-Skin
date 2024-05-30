@@ -11,7 +11,7 @@ with the il- variable set here.
 //** For Standard Buttons, Main color used in various places, used to be @brand-primary
 @il-main-color:		#5D6089;
 //** For Primary Buttons, used to point to interactions with a special importance, used to be @brand-secondary
-@il-secondary-color:	#9AD0B0;
+@il-secondary-color:	#9AD0B0;//#C2D6CA; //#92D09C;
 //** Used to indicate some success, used to be @brand-success
 @il-success-color:		#C5E3E3;
 //** Used to indicate some success, used to be @brand-info
@@ -62,9 +62,9 @@ with the il- variable set here.
 //## Extended Colors of ILIAS to be used to generate coloring for components like charts.
 
 //** Variant 1 of the extended color set in ILIAS
-@il-extended-color-1:		#F9FFC4; //#f3de2c;
+@il-extended-color-1:		#D5D286; //#F9FFC4; //#f3de2c;
 //** Variant 2 of the extended color set in ILIAS
-@il-extended-color-2:		#FFA583; //#d38000;
+@il-extended-color-2:		#FB8F67; //#FFA583; //#d38000;
 //** Variant 3 of the extended color set in ILIAS
 @il-extended-color-3:		#59A0A6; //#307C88;
 //** Variant 4 of the extended color set in ILIAS
@@ -925,6 +925,9 @@ with the il- variable set here.
 //
 //
 
+//## Colors
+@tax-il-highlight-color: #7CFD98;
+
 //## Borders
 @tax-il-layout-border: 1px solid darken(@il-main-dark-bg, 5%);
 
@@ -953,7 +956,12 @@ with the il- variable set here.
 @tax-il-breadcrumb-padding: @il-padding-large-vertical (@il-padding-xxlarge-horizontal+@il-padding-xlarge-horizontal);
 
 //## Header Content Page
-@tax-il-header-image-filter: invert(82%) sepia(13%) saturate(1303%) hue-rotate(78deg) brightness(98%) contrast(112%);// weiss: invert(1);
+@tax-il-header-image-filter: none; //invert(82%) sepia(13%) saturate(1303%) hue-rotate(78deg) brightness(98%) contrast(112%);//
+@tax-il-header-image-border-radius: 80px;
+@tax-il-header-image-border: 2px dotted @il-text-color;
+@tax-il-header-image-padding: @il-padding-large-vertical;
+@tax-il-header-image-width: 45px;
+@tax-il-header-image-height: @tax-il-header-image-width;
 @tax-il-pagetitle-padding-left: @il-padding-xxxlarge-horizontal;
 @tax-il-pagetitle-margin-top: @il-padding-xxlarge-vertical+@il-padding-small-vertical;
 @tax-il-page-content-header-bg-color: @il-main-color; /* #3981A7; */
@@ -965,14 +973,14 @@ with the il- variable set here.
 @tax-il-header-desc-padding: @il-padding-base 0;
 
 /* Alert */
-@tax-il-header-color: #7CFD98;
+@tax-il-header-color: @tax-il-highlight-color;
 @tax-il-header-alert-color: @il-main-color;
 @tax-il-header-alert-font-size: @il-font-size-base;
 @tax-il-header-alert-bg-color: @tax-il-header-color;
-@tax-il-header-alert-padding: @il-padding-base-vertical @il-padding-base @il-padding-base-vertical @il-padding-small-horizontal;
-@tax-il-header-alert-width: 10%;
+@tax-il-header-alert-padding: @il-padding-base-vertical @il-padding-xs-horizontal @il-padding-base-vertical @il-padding-xs-horizontal;
+@tax-il-header-alert-width: 3%;
 @tax-il-header-alert-text-align: center;
-@tax-il-header-alert-min-width: 100px;
+@tax-il-header-alert-min-width: 80px;
 @tax-il-header-alert-border-radius: @il-border-radius-base;
 
 /* Alert Warnings */
@@ -1111,7 +1119,7 @@ with the il- variable set here.
 @tax-il-calmini-font-size: @il-font-size-base;
 
 //## Tables
-@tax-il-table-outer-box-shadow: @tax-il-box-shadow;
+@tax-il-table-outer-box-shadow: none;
 @tax-il-table-footlight-font-size: @il-font-size-small;
 @tax-il-table-btn-link-font-size: @il-font-size-small;
 @tax-il-table-th-bg-color: @il-main-dark-bg;
@@ -1131,6 +1139,9 @@ with the il- variable set here.
 @tax-il-footer-permanent-url-border-bottom: 1px solid @il-warning-color;
 @tax-il-footer-permanent-url-margin-right: @il-margin-base;
 @tax-il-footer-text-color: @tax-il-container-ItemSection-color;
+@tax-il-footer-text-font-size: @il-font-size-small;
+@tax-il-footer-text-padding: @il-padding-base-vertical @il-padding-large-horizontal;
+@tax-il-footer-link-hover: @il-link-hover-color;
 
 //## Filter
 @tax-il-filter-input-group-bg-color: @il-main-bg;

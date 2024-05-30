@@ -11632,44 +11632,44 @@ with the il- variable set here.
   }
 }
 .extended-color-variant-1.il-extended-color-variant-standard {
-  color: #e9ff2b;
-  background-color: #f9ffc4;
+  color: #908c32;
+  background-color: #d5d286;
 }
 .extended-color-variant-1.il-extended-color-variant-light {
-  color: #f0ff6d;
-  background-color: #ffffff;
+  color: #bfba46;
+  background-color: #e7e6bb;
 }
 .extended-color-variant-1.il-extended-color-variant-lighter {
-  color: #f1ff77;
-  background-color: #ffffff;
+  color: #c1bd4d;
+  background-color: #f5f4e1;
 }
 .extended-color-variant-1.il-extended-color-variant-dark {
   color: #ffffff;
-  background-color: #f2ff7d;
+  background-color: #c3be51;
 }
 .extended-color-variant-1.il-extended-color-variant-darker {
   color: #ffffff;
-  background-color: #eeff54;
+  background-color: #aeaa3d;
 }
 .extended-color-variant-2.il-extended-color-variant-standard {
-  color: #e94000;
-  background-color: #ffa583;
+  color: #c43905;
+  background-color: #fb8f67;
 }
 .extended-color-variant-2.il-extended-color-variant-light {
-  color: #ff662c;
-  background-color: #ffd9ca;
+  color: #f95113;
+  background-color: #fdc2ad;
 }
 .extended-color-variant-2.il-extended-color-variant-lighter {
-  color: #ff6d36;
-  background-color: #fffefd;
+  color: #f9581c;
+  background-color: #fee7de;
 }
 .extended-color-variant-2.il-extended-color-variant-dark {
   color: #ffffff;
-  background-color: #ff713c;
+  background-color: #f95c21;
 }
 .extended-color-variant-2.il-extended-color-variant-darker {
   color: #ffffff;
-  background-color: #ff5413;
+  background-color: #ec4406;
 }
 .extended-color-variant-3.il-extended-color-variant-standard {
   color: #244042;
@@ -13835,7 +13835,7 @@ li.ilFrmPostRow div.ilForm div.ilFormOption {
   margin: 0 0 3px;
 }
 li.ilModeratorPosting {
-  border-left: 6px solid #F9FFC4;
+  border-left: 6px solid #D5D286;
 }
 li.ilPostingNeedsActivation {
   border-left: 6px solid #A69FB3;
@@ -15698,7 +15698,7 @@ th.ilSkillEntryHead {
   border-color: #59A0A6;
 }
 .ilSkillEvalItem.ilSkillEvalType2 {
-  border-color: #FFA583;
+  border-color: #FB8F67;
 }
 .ilSkillLevelDescription,
 .ilSkillMaterial,
@@ -15728,7 +15728,7 @@ th.ilSkillEntryHead {
   color: #59A0A6;
 }
 .ilSkillEvalItem > .row > .ilSkillEvalType2 {
-  color: #FFA583;
+  color: #FB8F67;
 }
 .ilSkillEvalItem > .row > .ilSkillEvalType3 {
   color: #77c095;
@@ -20182,12 +20182,20 @@ input.btn {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all 0.2s ease-in-out;
 }
+.il-maincontrols-footer .il-footer-text {
+  font-size: 0.75rem;
+  padding: 3px 12px;
+  color: #575757;
+}
 .il-maincontrols-footer .il-footer-permanent-url {
   border-bottom: 1px solid #FF4A59;
   margin-right: 9px;
 }
-.il-maincontrols-footer .il-footer-text {
+.il-maincontrols-footer .il-footer-content .il-footer-links {
   color: #575757;
+}
+.il-maincontrols-footer .il-footer-content .il-footer-links a:hover {
+  color: #5D6089;
 }
 #wayf_div {
   margin-top: 100px;
@@ -20234,7 +20242,12 @@ h1.il-page-content-header {
   color: #7CFD98;
 }
 #headerimage {
-  filter: invert(82%) sepia(13%) saturate(1303%) hue-rotate(78deg) brightness(98%) contrast(112%);
+  filter: none;
+  border-radius: 80px;
+  border: 2px dotted #000000;
+  padding: 6px;
+  width: 45px;
+  height: 45px;
 }
 .il-pagetitle {
   padding-left: 18px;
@@ -20248,10 +20261,10 @@ div.ilHeaderAlert {
   color: #5D6089;
   font-size: 0.875rem;
   background-color: #7CFD98;
-  padding: 3px 9px 3px 6px;
-  width: 10%;
+  padding: 3px 3px 3px 3px;
+  width: 3%;
   text-align: center;
-  min-width: 100px;
+  min-width: 80px;
   border-radius: 3px;
 }
 .ui-dropzone {
@@ -20417,7 +20430,7 @@ hr {
   padding-bottom: 15px;
 }
 div.ilTableOuter {
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  box-shadow: none;
 }
 span.ilTableFootLight {
   font-size: 0.75rem;
