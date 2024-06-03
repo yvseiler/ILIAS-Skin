@@ -20243,11 +20243,9 @@ h1.il-page-content-header {
 }
 #headerimage {
   filter: none;
-  border-radius: 80px;
-  border: 2px dotted #000000;
+  border-radius: 22px;
   padding: 6px;
-  width: 45px;
-  height: 45px;
+  box-shadow: 12px 12px 24px #4f5274, -12px -12px 24px #6b6e9e;
 }
 .il-pagetitle {
   padding-left: 18px;
