@@ -2363,7 +2363,7 @@ tbody.collapse.in {
 .dropdown-menu > li > a:focus {
   color: #000000;
   text-decoration: none;
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -7389,28 +7389,28 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary,
 #wayf_submit_button {
   color: #000000;
-  background-color: #9AD0B0;
-  border-color: #9AD0B0;
+  background-color: #C2D6CA;
+  border-color: #C2D6CA;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #000000;
-  background-color: #77c095;
-  border-color: #4aa06d;
+  background-color: #a4c2b0;
+  border-color: #76a388;
 }
 .btn-primary:hover,
 #wayf_submit_button:hover {
   color: #000000;
-  background-color: #77c095;
-  border-color: #70bd8f;
+  background-color: #a4c2b0;
+  border-color: #9dbdaa;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #000000;
-  background-color: #77c095;
+  background-color: #a4c2b0;
   background-image: none;
-  border-color: #70bd8f;
+  border-color: #9dbdaa;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -7422,8 +7422,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #000000;
-  background-color: #5fb482;
-  border-color: #4aa06d;
+  background-color: #8eb39d;
+  border-color: #76a388;
 }
 .btn-primary.disabled:hover,
 .btn-primary[disabled]:hover,
@@ -7434,11 +7434,11 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #9AD0B0;
-  border-color: #9AD0B0;
+  background-color: #C2D6CA;
+  border-color: #C2D6CA;
 }
 .btn-primary .badge {
-  color: #9AD0B0;
+  color: #C2D6CA;
   background-color: #000000;
 }
 .btn[disabled],
@@ -7622,8 +7622,8 @@ button.close {
   transition: all 0.25s ease-in-out;
 }
 .il-toggle-button.on {
-  background: #326c4a;
-  border: 1px solid #326c4a;
+  background: #527a62;
+  border: 1px solid #527a62;
 }
 .il-toggle-button.on .il-toggle-label-on {
   position: absolute;
@@ -7720,7 +7720,7 @@ ul.dropdown-menu > li > .btn:hover,
 ul.dropdown-menu > li > .btn:focus {
   text-decoration: none;
   color: #000000;
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
 }
 .il-maincontrols-slate-content .dropdown-menu {
   right: 0;
@@ -8686,7 +8686,7 @@ input[type="checkbox"]:focus:focus-visible {
   background-color: #FF4A59;
 }
 .il-table-presentation-viewcontrols {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9227,7 +9227,7 @@ div.alert ul > li:before {
   width: 100%;
 }
 .il-tree li.il-tree-node.highlighted > .node-line {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
 }
 .il-tree li.il-tree-node.expandable > .node-line:before {
   color: #737373;
@@ -9404,7 +9404,7 @@ main {
 }
 /* Footer */
 footer {
-  background-color: white;
+  background-color: #f5f5f5;
   min-height: auto;
   padding: 10px 0 10px 5px;
   text-align: center;
@@ -10462,10 +10462,10 @@ footer {
   }
 }
 footer {
-  background-color: white;
+  background-color: #f5f5f5;
   padding: 10px 0 10px 5px;
   border-top: 1px solid #dddddd;
-  height: 45px;
+  height: 70px;
   text-align: left;
 }
 .il-maincontrols-footer {
@@ -12142,7 +12142,7 @@ span.ilAlert {
 .dropdown-menu li > a:focus {
   text-decoration: none;
   color: #000000;
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
 }
 .dropdown-menu img {
   border: 0;
@@ -13201,7 +13201,7 @@ div.ilSideBarContent {
 .ui-menu .ui-menu-item > *:hover,
 .ui-menu .ui-menu-item > *.ui-state-hover,
 .ui-menu .ui-menu-item > *.ui-state-active {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
   color: #000000;
 }
 .ui-menu .ui-menu-item a {
@@ -13289,7 +13289,7 @@ img.ilSmallIcon {
 }
 .il_VAccordionHead:hover,
 .il_HAccordionHead:hover {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
 }
 .il_VAccordionHead {
   display: block;
@@ -13307,7 +13307,7 @@ img.ilSmallIcon {
 .il_HAccordionHeadActive,
 .il_VAccordionHeadActive {
   background-image: url("images/tree_exp.svg");
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
 }
 .ilAccHideContent {
   width: 0px;
@@ -13559,13 +13559,13 @@ li.il_Explorer {
 }
 a.il_HighlightedNode,
 .ilHighlighted {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
   padding: 0 5px;
 }
 li.ilExplSecHighlight {
   background-color: #f6f4f6 !important;
-  border-top: solid 2px #3a7d56;
-  border-bottom: solid 2px #3a7d56;
+  border-top: solid 2px #5c896e;
+  border-bottom: solid 2px #5c896e;
 }
 div.il_ExplorerItemDescription {
   margin-left: 40px;
@@ -13971,7 +13971,7 @@ button.copg-add.dropdown-toggle.btn:hover {
   left: 45%;
 }
 button.copg-add:hover {
-  color: #bde0cb;
+  color: #e1ebe5;
   background-color: #ffffff;
 }
 div.il_droparea {
@@ -13987,8 +13987,8 @@ div.il_droparea {
 div.il_droparea:hover,
 div.ilCOPGDropActice,
 .il_droparea_valid_target {
-  border-color: #bde0cb;
-  color: #bde0cb;
+  border-color: #e1ebe5;
+  color: #e1ebe5;
   background-color: #ffffff;
 }
 div.ilCOPGNoPageContent {
@@ -14040,7 +14040,7 @@ div.ilEditLabel {
   display: none;
 }
 div.il_editarea_selected:hover > div.ilEditLabel {
-  background-color: #9AD0B0;
+  background-color: #C2D6CA;
 }
 div.ilc_page_Page > div.il_editarea_disabled {
   padding: 10px;
@@ -14066,7 +14066,7 @@ div.copg-current-edit,
   border-color: #ffffff;
 }
 div.il_editarea_selected:hover {
-  border-color: #9AD0B0;
+  border-color: #C2D6CA;
 }
 div.il_editarea_disabled_selected {
   border: 2px solid #FF4A59;
@@ -14355,7 +14355,7 @@ div.ilEditDeleted {
   border-color: #FF4A59;
 }
 div.ilEditNew {
-  border-color: #9AD0B0;
+  border-color: #C2D6CA;
 }
 .ilCOPGCompareLegend {
   display: inline-block;
@@ -14425,7 +14425,7 @@ a.nostyle:hover {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-  background-color: #54b07a;
+  background-color: #85ad95;
   color: white;
 }
 .ilCOPgEditStyleSelectionItem {
@@ -14434,7 +14434,7 @@ a.nostyle:hover {
   cursor: pointer;
 }
 .ilCOPgEditStyleSelectionItem:hover {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
 }
 ul#ilAdvSelListTable_style_selection {
   overflow: auto;
@@ -15375,7 +15375,7 @@ tr.tblheader {
   background-color: #d0d0ff;
 }
 .tblrowmarked {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
   color: #000000;
   padding: 3px;
 }
@@ -15392,7 +15392,7 @@ tr.tblheader {
   vertical-align: top;
 }
 .tblrowmarkedtop {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
   color: #000000;
   padding: 3px;
   vertical-align: top;
@@ -15722,7 +15722,7 @@ th.ilSkillEntryHead {
   padding-bottom: 2px;
 }
 .ilSkillEvalItem.ilSkillEvalType3 {
-  border-color: #77c095;
+  border-color: #a4c2b0;
 }
 .ilSkillEvalItem > .row > .ilSkillEvalType1 {
   color: #59A0A6;
@@ -15731,7 +15731,7 @@ th.ilSkillEntryHead {
   color: #FB8F67;
 }
 .ilSkillEvalItem > .row > .ilSkillEvalType3 {
-  color: #77c095;
+  color: #a4c2b0;
 }
 .ilSkillFilter .ilToolbar select.form-control {
   display: block;
@@ -15789,7 +15789,7 @@ img.ilPollQuestionImage {
   height: 18px;
 }
 .ilPollQuestionResultBarInner {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
   height: 18px;
 }
 .ilPollQuestionResultPerc {
@@ -16324,7 +16324,7 @@ td.chatroom {
   margin-left: 100px;
 }
 .ilChatroomUser .media:hover {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
 }
 .ilChatroomUser .dropdown-menu {
   position: static;
@@ -16406,7 +16406,7 @@ div.ilListItemSection {
   max-width: calc(100% - 40px);
 }
 div.ilContainerListItemOuterHighlight {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
   zoom: 1;
 }
 .ilCLI {
@@ -16847,10 +16847,10 @@ div.ilCreationFormSection .form-horizontal {
   background-color: white;
 }
 .table-striped > tbody > tr.ilObjListRow:hover > td {
-  background-color: #cee8d9;
+  background-color: #f0f5f2;
 }
 .table-striped > tbody > tr.ilObjListRow:hover:nth-child(2n+1) > td {
-  background-color: #cee8d9;
+  background-color: #f0f5f2;
 }
 /* Services/Navigation */
 form.ilNavHistoryForm {
@@ -17738,14 +17738,14 @@ div.il-survey-question {
   margin-bottom: 30px;
 }
 div.ilSurveyPageEditDropArea {
-  border-color: #bde0cb;
-  color: #bde0cb;
-  background-color: #f1f8f4;
+  border-color: #e1ebe5;
+  color: #e1ebe5;
+  background-color: #ffffff;
 }
 div.ilSurveyPageEditDropAreaSelected {
-  border-color: #bde0cb;
-  color: #bde0cb;
-  background-color: #cee8d9;
+  border-color: #e1ebe5;
+  color: #e1ebe5;
+  background-color: #f0f5f2;
 }
 div.ilSurveyPageEditAreaDragging {
   border: 2px dashed #2c2c2c;
@@ -17859,7 +17859,7 @@ div.ilChecklist ul a:hover {
   color: #000000;
 }
 div.ilChecklist ul li a:hover {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
 }
 div.ilChecklist ul li p,
 div.ilChecklist ul li p:hover {
@@ -17979,7 +17979,7 @@ body.ilPrtfPdfBody .ilPCMyCoursesToggle img {
   display: table;
 }
 #awareness-content .media:hover {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
 }
 #awareness-content .glyphicon {
   font-size: inherit;
@@ -18119,7 +18119,7 @@ body.ilPrtfPdfBody .ilPCMyCoursesToggle img {
   height: 10px;
 }
 #awareness-content .ilHighlighted {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
   color: #595959;
 }
 .ilAwrnBadgeHidden {
@@ -18742,7 +18742,7 @@ span.ilProfileBadge .modal .img-responsive {
   cursor: pointer;
 }
 .bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
-  background: #bde0cb;
+  background: #e1ebe5;
   color: #000000;
 }
 .bootstrap-datetimepicker-widget table td {
@@ -18765,7 +18765,7 @@ span.ilProfileBadge .modal .img-responsive {
 .bootstrap-datetimepicker-widget table td.hour:hover,
 .bootstrap-datetimepicker-widget table td.minute:hover,
 .bootstrap-datetimepicker-widget table td.second:hover {
-  background: #bde0cb;
+  background: #e1ebe5;
   color: #000000;
   cursor: pointer;
 }
@@ -18781,7 +18781,7 @@ span.ilProfileBadge .modal .img-responsive {
   display: inline-block;
   border: solid transparent;
   border-width: 0 0 7px 7px;
-  border-bottom-color: #9AD0B0;
+  border-bottom-color: #C2D6CA;
   border-top-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   bottom: 4px;
@@ -18789,7 +18789,7 @@ span.ilProfileBadge .modal .img-responsive {
 }
 .bootstrap-datetimepicker-widget table td.active,
 .bootstrap-datetimepicker-widget table td.active:hover {
-  background-color: #9AD0B0;
+  background-color: #C2D6CA;
   color: #000000;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -18812,11 +18812,11 @@ span.ilProfileBadge .modal .img-responsive {
   border-radius: 3px;
 }
 .bootstrap-datetimepicker-widget table td span:hover {
-  background: #bde0cb;
+  background: #e1ebe5;
   color: #000000;
 }
 .bootstrap-datetimepicker-widget table td span.active {
-  background-color: #9AD0B0;
+  background-color: #C2D6CA;
   color: #000000;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -20182,7 +20182,16 @@ input.btn {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all 0.2s ease-in-out;
 }
-.il-maincontrols-footer .il-footer-text {
+footer {
+  border-top: 0px;
+  text-align: left;
+  display: flex;
+  flex-direction: column-reverse;
+}
+span.il-footer-text {
+  font-size: 0.625rem;
+}
+.il-footer-text {
   font-size: 0.75rem;
   padding: 3px 12px;
   color: #575757;
@@ -20464,7 +20473,7 @@ button.copg-add.dropdown-toggle.btn:hover .il-copg-add-text,
   color: #000000;
 }
 button.copg-add.dropdown-toggle.btn:hover {
-  background-color: #bde0cb;
+  background-color: #e1ebe5;
 }
 div.il_editarea_selected:hover > div.ilEditLabel {
   color: #000000;
@@ -20474,7 +20483,7 @@ div.copg-current-edit,
 #tinytarget_ifr {
   border-style: solid;
   border-width: 2px;
-  border-color: #9AD0B0;
+  border-color: #C2D6CA;
 }
 div.ilc_page_cont_PageContainer {
   border: none;
