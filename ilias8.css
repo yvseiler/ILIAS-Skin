@@ -6923,7 +6923,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .il-counter-novelty {
   padding: 2px 4px;
   margin-top: -5px;
-  background-color: #FB8F67;
+  background-color: #FF4A59;
 }
 .il-counter-status {
   padding: 2px 4px;
@@ -7146,7 +7146,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   overflow: visible;
 }
 .il-card .card-highlight {
-  background: #FB8F67;
+  background: #FF4A59;
   height: 6px;
   width: 100%;
 }
@@ -8002,7 +8002,7 @@ ul.dropdown-menu > li > .btn:focus {
 }
 .breadcrumb_wrapper .breadcrumb > span + span:before {
   content: " \e606";
-  color: #FB8F67;
+  color: #FF4A59;
   padding: 8px 10px;
   font-family: "il-icons";
 }
@@ -9962,7 +9962,7 @@ footer {
 }
 .il-maincontrols-metabar > li > .btn-bulky .glyphicon,
 .il-maincontrols-metabar > li > .link-bulky .glyphicon {
-  color: #FB8F67;
+  color: #FF4A59;
   font-size: 1.4375rem;
 }
 @media only screen and (max-width: 768px) {
@@ -10016,7 +10016,7 @@ footer {
     right: 0;
   }
   .il-metabar-slates .glyphicon {
-    color: #FB8F67;
+    color: #FF4A59;
     font-size: 1.25rem;
   }
   .il-metabar-slates .il-counter-status,
@@ -10269,7 +10269,7 @@ footer {
 }
 .il-mainbar-tools-button .btn-bulky,
 .il-mainbar-tools-button .btn-bulky.engaged {
-  background-color: #FB8F67;
+  background-color: #FF4A59;
   border: 0;
   color: white;
   padding: 0;
@@ -10510,9 +10510,9 @@ footer {
   margin: 3px 3px 6px 0px;
 }
 .il-mode-info {
-  border-top: 3px solid #FB8F67;
-  border-left: 3px solid #FB8F67;
-  border-right: 3px solid #FB8F67;
+  border-top: 3px solid #FF4A59;
+  border-left: 3px solid #FF4A59;
+  border-right: 3px solid #FF4A59;
   text-align: center;
   z-index: 1010;
   position: absolute;
@@ -10521,7 +10521,7 @@ footer {
   pointer-events: none;
 }
 .il-mode-info + div {
-  border: 3px solid #FB8F67;
+  border: 3px solid #FF4A59;
   border-top: 0 none;
 }
 @media only screen and (max-width: 768px) {
@@ -10531,7 +10531,7 @@ footer {
 }
 .il-mode-info span.il-mode-info-content {
   margin: auto;
-  background-color: #FB8F67;
+  background-color: #FF4A59;
   padding: 3px 9px 3px 9px;
   -webkit-box-shadow: 0px 2px 2px 0px #808080;
   -moz-box-shadow: 0px 2px 2px 0px #808080;
@@ -10803,10 +10803,10 @@ footer {
   color: #000000;
 }
 .glyph.highlighted {
-  color: #FB8F67;
+  color: #FF4A59;
 }
 .glyph.highlighted:hover {
-  color: #FB8F67;
+  color: #FF4A59;
 }
 .glyph.disabled {
   color: #737373;
@@ -13760,7 +13760,7 @@ li.ilFrmPostRow {
 }
 li.ilFrmPostRow.tblrowmarked {
   background-color: white;
-  border-left: 6px solid #FB8F67;
+  border-left: 6px solid #FF4A59;
 }
 li.ilFrmPostRow div.ilForm {
   width: 100%;
@@ -13818,7 +13818,7 @@ li.ilFrmPostRow div.ilForm div.ilFormOption {
   margin: 0;
   padding: 0;
   font-weight: 600;
-  color: #FB8F67;
+  color: #FF4A59;
 }
 .ilFrmPostAttachmentsContainer {
   margin: 15px 0 0;
@@ -17822,12 +17822,12 @@ div.ilSurveyPageEditActionMenu {
 }
 .ilTag.ilHighlighted,
 .ilTag.ilHighlighted:hover {
-  background-color: #FB8F67;
+  background-color: #FF4A59;
   color: white;
 }
 .ilTag.ilHighlighted:hover,
 .ilTag.ilHighlighted:hover:hover {
-  background-color: #fa7d4e;
+  background-color: #ff3142;
 }
 a.ilTag:hover,
 a.ilTag:active {
@@ -20033,7 +20033,7 @@ with the il- variable set here.
   color: #000000;
 }
 .il-mainbar-triggers .btn-bulky.engaged {
-  border-left: 4px solid #FB8F67;
+  border-left: 4px solid #FF4A59;
 }
 .il-maincontrols-mainbar {
   border-right: 1px solid #ebe6eb;
@@ -20052,7 +20052,7 @@ with the il- variable set here.
   color: #5D6089 !important;
 }
 .il-mainbar-tools-button .btn-bulky.engaged {
-  border-left: 4px solid #FB8F67;
+  border-left: 4px solid #FF4A59;
 }
 .il-mainbar-tools-button .btn-bulky,
 .il-mainbar-tools-button .btn-bulky.engaged {
@@ -20208,7 +20208,7 @@ span.il-footer-text {
   color: #575757;
 }
 .il-maincontrols-footer .il-footer-permanent-url {
-  border-bottom: 1px solid #FB8F67;
+  border-bottom: 1px solid #FF4A59;
   margin-right: 9px;
 }
 .il-maincontrols-footer .il-footer-content .il-footer-links {
@@ -20236,13 +20236,13 @@ span.il-footer-text {
 #wayf_submit_button {
   width: 100% !important;
   border: none !important;
-  background-color: #FB8F67 !important;
+  background-color: #FF4A59 !important;
   color: #ffffff !important;
 }
 #wayf_submit_button:hover {
   width: 100% !important;
   border: none !important;
-  background-color: #dd4006 !important;
+  background-color: #ca0011 !important;
   color: white !important;
 }
 #wayf_remember_checkbox_div {
@@ -20349,7 +20349,7 @@ div.il_HeaderInner.media {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   background-color: white;
-  border-bottom: 0px solid #FB8F67;
+  border-bottom: 0px solid #FF4A59;
   color: #000000;
   border-radius: 3px 3px 0 0;
 }
@@ -20360,7 +20360,7 @@ div.il_HeaderInner.media {
 .nav > li > a:hover,
 .nav > li > a:focus {
   background-color: white;
-  border-bottom: 0px solid #FB8F67;
+  border-bottom: 0px solid #FF4A59;
   color: #000000;
   border-radius: 3px 3px 0 0;
 }
@@ -20442,7 +20442,7 @@ table.calmini {
   background-color: white;
 }
 table.calmini td.calminitoday {
-  background-color: #FB8F67;
+  background-color: #FF4A59;
   border-radius: 16px;
 }
 td.calministd:hover {
