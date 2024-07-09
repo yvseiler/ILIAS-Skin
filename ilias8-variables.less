@@ -11,15 +11,15 @@ with the il- variable set here.
 //** For Standard Buttons, Main color used in various places, used to be @brand-primary
 @il-main-color:		#5D6089;
 //** For Primary Buttons, used to point to interactions with a special importance, used to be @brand-secondary
-@il-secondary-color:	#C2D6CA; //#9AD0B0;
+@il-secondary-color:	#C2D6CA;
 //** Used to indicate some success, used to be @brand-success
-@il-success-color:		#C5E3E3;
+@il-success-color:	#C5E3E3;
 //** Used to indicate some success, used to be @brand-info
-@il-info-color:		#6f86bc;
+@il-info-color:		@il-extended-color-7;
 //** Used to indicate some warning or to draw special focus to some element, used to be @brand-warning
-@il-warning-color:		#FF4A59;
+@il-warning-color:	@il-extended-color-2;
 //** Used to indicate some warning or to draw special focus to some element, used to be @brand-danger
-@il-danger-color:		#AE3D46;
+@il-danger-color:	@il-extended-color-8;
 
 //** Neutral Color for various Backgrounds, used to be @gray-dark and @il-neutral-color
 @il-neutral-color:		#2c2c2c;
@@ -62,23 +62,23 @@ with the il- variable set here.
 //## Extended Colors of ILIAS to be used to generate coloring for components like charts.
 
 //** Variant 1 of the extended color set in ILIAS
-@il-extended-color-1:		#D5D286; //#F9FFC4; //#f3de2c;
+@il-extended-color-1:		#D5D286;
 //** Variant 2 of the extended color set in ILIAS
-@il-extended-color-2:		#FB8F67; //#FFA583; //#d38000;
+@il-extended-color-2:		#FB8F67;
 //** Variant 3 of the extended color set in ILIAS
-@il-extended-color-3:		#59A0A6; //#307C88;
+@il-extended-color-3:		#59A0A6;
 //** Variant 4 of the extended color set in ILIAS
-@il-extended-color-4:		#81B3AE; //#86cb92;
+@il-extended-color-4:		#81B3AE;
 //** Variant 5 of the extended color set in ILIAS
-@il-extended-color-5:		#92D09C; //#ce73a8;
+@il-extended-color-5:		#92D09C;
 //** Variant 6 of the extended color set in ILIAS
-@il-extended-color-6:		#A69FB3; //#82639e;
+@il-extended-color-6:		#A69FB3;
 //** Variant 7 of the extended color set in ILIAS
-@il-extended-color-7:		#718BC3; //#9e7c7d;
+@il-extended-color-7:		#718BC3;
 //** Variant 8 of the extended color set in ILIAS
-@il-extended-color-8:		#D81E5B; //#f75e82;
+@il-extended-color-8:		#D81E5B;
 //** Variant 9 of the extended color set in ILIAS
-@il-extended-color-9:		#FF4A59; //#ea4d54;
+@il-extended-color-9:		#FF4A59;
 
 //** Factor by witch a specific color variant is darkened in the standard coloring
 @il-extended-color-factor-standard:		0%;
@@ -303,13 +303,13 @@ with the il- variable set here.
 //## Variables to control the footer section of ILIAS.
 
 //** controls background color of the footer.
-@il-footer-bg-color:		#f5f5f5; //@il-main-bg;
+@il-footer-bg-color:	@il-main-bg;
 //** controls the color of the text in the footer.
 @il-footer-color:		@il-text-color;
 //** controls the padding of the footer.
 @il-footer-padding:		10px 0 10px 5px;
 //** controls the height of the footer.
-@il-footer-height:		70px;
+@il-footer-height:		auto;//40px;
 //** controls margin from the footer to the main content, increase/decrase depending on the content (default, space for 4 lines).
 @il-footer-margin-bottom:		2*@il-line-height-computed*2;
 
@@ -802,11 +802,11 @@ with the il- variable set here.
 /** nagtive or positive contrast color for text and glyph **/
 @il-standard-page-system-info-contrast:		60%;
 /** contrast threshold for contrast color **/
-@il-standard-page-system-info-contrast-threshold:		43%;
+@il-standard-page-system-info-contrast-threshold:		10%;
 /** three color variants for neutral, important, breaking Head Infos **/
-@il-standard-page-system-info-color-variant-neutral:		lighten(@il-main-color, 50%);
-@il-standard-page-system-info-color-variant-important:		lighten(@il-danger-color, 40%);
-@il-standard-page-system-info-color-variant-breaking:		darken(@il-danger-color, 10%);
+@il-standard-page-system-info-color-variant-neutral:		lighten(@il-info-color, 20%);
+@il-standard-page-system-info-color-variant-important:		lighten(@il-extended-color-1, 12%);
+@il-standard-page-system-info-color-variant-breaking:		lighten(@il-danger-color, 15%);
 
 //== View Control
 //
@@ -956,10 +956,9 @@ with the il- variable set here.
 @tax-il-breadcrumb-padding: @il-padding-large-vertical (@il-padding-xxlarge-horizontal+@il-padding-xlarge-horizontal);
 
 //## Header Content Page
-@tax-il-header-image-filter: none; //invert(82%) sepia(13%) saturate(1303%) hue-rotate(78deg) brightness(98%) contrast(112%);//
 @tax-il-header-image-border-radius: 22px;
-@tax-il-header-image-border: 2px dotted @il-text-color;
-@tax-il-header-image-padding: @il-padding-large-vertical;
+@tax-il-header-image-box-shadow: 12px 12px 24px #4f5274, -12px -12px 24px #6b6e9e;
+@tax-il-header-image-padding: @il-padding-large-vertical; //Innenabstand zu Icon
 @tax-il-pagetitle-padding-left: @il-padding-xxxlarge-horizontal;
 @tax-il-pagetitle-margin-top: @il-padding-xxlarge-vertical+@il-padding-small-vertical;
 @tax-il-page-content-header-bg-color: @il-main-color; /* #3981A7; */
@@ -970,7 +969,7 @@ with the il- variable set here.
 @tax-il-header-desc-font-size: @il-font-size-large;
 @tax-il-header-desc-padding: @il-padding-base 0;
 
-/* Alert */
+/* Alert Header */
 @tax-il-header-color: @tax-il-highlight-color;
 @tax-il-header-alert-color: @il-main-color;
 @tax-il-header-alert-font-size: @il-font-size-base;
@@ -982,13 +981,13 @@ with the il- variable set here.
 @tax-il-header-alert-border-radius: @il-border-radius-base;
 
 /* Alert Warnings */
-@tax-il-alert-danger-bg-color: @tax-il-alert-warning-bg-color;
-@tax-il-alert-danger-border-color: @tax-il-alert-warning-border-color;
-@tax-il-alert-danger-color: @tax-il-alert-warning-color;
-@tax-il-alert-warning-bg-color: lighten(@il-warning-color, 25%);
+@tax-il-alert-danger-bg-color: lighten(@il-danger-color, 32%);
+@tax-il-alert-danger-border-color: @tax-il-alert-danger-bg-color;
+@tax-il-alert-danger-color: darken(@il-danger-color, 40%);
+@tax-il-alert-warning-bg-color: lighten(@il-warning-color, 19%);
 @tax-il-alert-warning-border-color: @tax-il-alert-warning-bg-color;
 @tax-il-alert-warning-color: darken(@il-warning-color, 40%);
-@tax-il-alert-info-bg-color: lighten(@il-info-color, 25%);
+@tax-il-alert-info-bg-color: lighten(@il-info-color, 20%);
 @tax-il-alert-info-border-color: @tax-il-alert-info-bg-color;
 @tax-il-alert-info-color: darken(@il-info-color, 40%);
 @tax-il-alert-success-bg-color: lighten(@il-success-color, 5%);
@@ -1141,7 +1140,7 @@ with the il- variable set here.
 @tax-il-footer-text-font-size-span: @il-font-size-xsmall;
 @tax-il-footer-text-padding: @il-padding-base-vertical @il-padding-large-horizontal;
 @tax-il-footer-link-hover: @il-link-hover-color;
-@tax-il-footer-border-top: 0px; //1px solid @il-main-border-color;
+@tax-il-footer-border-top: 1px solid @il-main-border-color;
 @tax-il-footer-text-align: left;
 @tax-il-footer-display: flex;
 @tax-il-footer-flex-direction: column-reverse;
@@ -1160,6 +1159,12 @@ with the il- variable set here.
 @tax-il-form-help-block-link-color-hover: @il-link-color;
 @tax-il-form-help-block-link-text-decoration: underline;
 
+//** Advanced Selection List
+@tax-il-dropdown-AdvSelListTable-padding-bottom: @il-padding-large-horizontal;
+@tax-il-dropdown-AdvSelListTable-margin: @il-padding-base-vertical;
+@tax-il-dropdown-AdvSelListTable-bg-color: @il-main-dark-bg;
+@tax-il-dropdown-AdvSelListTable-bg-color-hover: @il-highlight-bg;
+@tax-il-dropdown-AdvSelListTable-cursor: pointer;
 
 //** Login
 @tax-il-login-submit-bg-color: @il-warning-color;
@@ -1169,3 +1174,11 @@ with the il- variable set here.
 
 //** Selected Text
 @tax-selection-background-color: lighten(@il-info-color,26%);
+
+//** Opencast Plugin
+@tax-il-xoct-preview-image-background-color: transparent;
+
+//** Interactive Video Plugin
+@tax-il-iv-tab-nav-bg-color: @il-main-color;
+@tax-il-iv-tab-nav-padding: @il-padding-xs-horizontal 0px 0px @il-padding-xs-horizontal;
+@tax-il-iv-tab-nav-color: @tax-il-tab-active-color;

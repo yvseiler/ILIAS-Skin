@@ -65,3 +65,18 @@ button .caret{
 input.btn {
   border-radius: @tax-il-input-btn-border-radius;
 }
+
+
+// Absatzformat-Dropdown in Forms (Page Editor: Absatzformat Akkordeon, Tabellen)
+
+ul.dropdown-menu#ilAdvSelListTable_vaccord_templ > li,
+ul.dropdown-menu#ilAdvSelListTable_characteristic > li{
+  padding-bottom: @tax-il-dropdown-AdvSelListTable-padding-bottom;
+  margin: @tax-il-dropdown-AdvSelListTable-margin;
+  background-color: @tax-il-dropdown-AdvSelListTable-bg-color;
+  cursor: @tax-il-dropdown-AdvSelListTable-cursor;
+
+  &:hover {
+    background-color: @tax-il-dropdown-AdvSelListTable-bg-color-hover;
+  }
+}
