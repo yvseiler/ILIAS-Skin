@@ -44,7 +44,7 @@ with the il- variable set here.
 //** Used to be @text-color. Can be used on all background colors.
 @il-text-color:		#000000;
 //** Used if text is hovered in components such a Dropdowns
-@il-text-hover-color:		darken(@il-text-color, 10%);
+@il-text-hover-color:		lighten(@il-text-color, 10%);
 //** Used e.g. for Bylines in Forms. Used to be @il-light-text-color. For accessibility reasons, the @il-text-color should only be used on the @il-main-bg.
 @il-text-light-color:		lighten(@il-text-color, 35%);
 
@@ -948,6 +948,8 @@ with the il- variable set here.
 
 //## Login
 @tax-aai-login-width:		350px;
+@tax-il-taxUserAgreement-text-align: center;
+@tax-il-taxUserAgreement-margin-top: 2*@il-margin-xxlarge-vertical;
 
 //## Breadcrumb
 @tax-il-breadcrumb-border-bottom: @tax-il-layout-border;
@@ -961,7 +963,7 @@ with the il- variable set here.
 @tax-il-header-image-padding: @il-padding-large-vertical; //Innenabstand zu Icon
 @tax-il-pagetitle-padding-left: @il-padding-xxxlarge-horizontal;
 @tax-il-pagetitle-margin-top: @il-padding-xxlarge-vertical+@il-padding-small-vertical;
-@tax-il-page-content-header-bg-color: @il-main-color; /* #3981A7; */
+@tax-il-page-content-header-bg-color: @il-main-color;
 @tax-il-page-content-header-margin: @il-margin-xxxlarge-vertical @il-padding-xxxlarge-vertical 0 @il-padding-xxxlarge-vertical;
 @tax-il-page-content-header-border-radius: @il-border-radius-base @il-border-radius-base 0 0;
 @tax-il-page-content-header-color: @tax-il-header-color;
@@ -971,9 +973,9 @@ with the il- variable set here.
 
 /* Alert Header */
 @tax-il-header-color: @tax-il-highlight-color;
-@tax-il-header-alert-color: @il-main-color;
+@tax-il-header-alert-color: @il-main-bg;
 @tax-il-header-alert-font-size: @il-font-size-base;
-@tax-il-header-alert-bg-color: @tax-il-header-color;
+@tax-il-header-alert-bg-color: @il-danger-color;
 @tax-il-header-alert-padding: @il-padding-base-vertical @il-padding-xs-horizontal @il-padding-base-vertical @il-padding-xs-horizontal;
 @tax-il-header-alert-width: 3%;
 @tax-il-header-alert-text-align: center;
@@ -1033,6 +1035,8 @@ with the il- variable set here.
 
 //## Tools
 @il-mainbar-tools-button-color: @il-text-color;
+@tax-il-mainbar-tools-tab-btn-disengaged-icon-filter: invert(1);
+@tax-il-mainbar-tools-tab-btn-disengaged-color: white;
 
 //##Buttons
 @tax-il-btn-standard-bg-hover: darken(@il-main-dark-bg, 10%);//darken(@il-btn-standard-bg, 10%);
@@ -1060,12 +1064,16 @@ with the il- variable set here.
 @tax-il-copg-button-color: @il-link-color;
 @tax-il-copg-button-bg-color-hover: @il-highlight-bg;
 @tax-il-pagecontainer-border: none;
+@tax-il-copg-editarea-selected-border-color: @tax-il-highlight-color;
+@tay-il-copg-editarea-selected-border-width: 2px;
+@tax-il-copg-editarea-selected-border-style: solid;
 
 //## ContainerBlock
 @tax-il-box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; //rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 @tax-il-container-block-header-padding: @il-padding-large-vertical @il-padding-xs-horizontal @il-padding-large-vertical @il-padding-xs-horizontal;
 @tax-il-container-block-header-bg-color: transparent;
 @tax-il-container-block-border-top: 1px solid darken(@il-main-dark-bg, 5%);
+@tax-il-container-itemTitle-color: @il-neutral-light-color;
 @tax-il-container-ItemTitle-link-color: @il-text-color;
 @tax-il-container-ItemTitle-link-color-hover: @il-link-hover-color;
 @tax-il-container-ItemSection-color: lighten(@il-neutral-color,17%);
@@ -1097,6 +1105,7 @@ with the il- variable set here.
 @tax-il-item-divider-padding: 0;
 @tax-il-item-container-border-bottom: none;
 @tax-il-item-title-link-hover: @il-link-hover-color;
+@tax-il-container-ItemAlert-property: @il-danger-color; /* offline */
 
 //## Card
 @tax-il-container-tile-rows-padding: @il-padding-large-vertical 0;
@@ -1151,9 +1160,10 @@ with the il- variable set here.
 @tax-il-filter-button-bg-color: @il-btn-standard-bg;
 @tax-il-filter-button-bg-hover: @tax-il-btn-standard-bg-hover;
 
-//** Forms
+//## Forms
 @tax-il-form-height: 1.75rem;
-@tax-il-form-Header-Desc: @il-neutral-light-color;
+@tax-il-form-header-text-transform: uppercase;
+@tax-il-form-header-desc: @il-neutral-light-color;
 @tax-il-form-control-label-padding-top: 0px;
 @tax-il-form-help-block-link-color: @il-main-color;
 @tax-il-form-help-block-link-color-hover: @il-link-color;
@@ -1166,19 +1176,37 @@ with the il- variable set here.
 @tax-il-dropdown-AdvSelListTable-bg-color-hover: @il-highlight-bg;
 @tax-il-dropdown-AdvSelListTable-cursor: pointer;
 
-//** Login
+//## Login
 @tax-il-login-submit-bg-color: @il-extended-color-9;
 @tax-il-login-submit-bg-color-hover: darken(@il-extended-color-9,25%);
 @tax-il-login-submit-text-color-hover: white;
 @tax-il-login-submit-border-hover: none;
 
-//** Selected Text
+//## Selected Text
 @tax-selection-background-color: lighten(@il-info-color,26%);
 
-//** Opencast Plugin
+//## Opencast Plugin
 @tax-il-xoct-preview-image-background-color: transparent;
 
-//** Interactive Video Plugin
-@tax-il-iv-tab-nav-bg-color: @il-main-color;
-@tax-il-iv-tab-nav-padding: @il-padding-xs-horizontal 0px 0px @il-padding-xs-horizontal;
-@tax-il-iv-tab-nav-color: @tax-il-tab-active-color;
+//## Interactive Video Plugin
+//** Tabs
+@tax-il-iv-tab-border: 1px solid #000000;
+@tax-il-iv-tab-nav-border-top: @tax-il-iv-tab-border;
+@tax-il-iv-tab-nav-border-right: @tax-il-iv-tab-border;
+@tax-il-iv-tab-nav-border-left: @tax-il-iv-tab-border;
+@tax-il-iv-tab-nav-active-color: @il-text-color;
+@tax-il-iv-tab-nav-border-top-hover: @tax-il-iv-tab-nav-border-top;
+@tax-il-iv-tab-nav-border-right-hover: @tax-il-iv-tab-nav-border-right;
+@tax-il-iv-tab-nav-border-left-hover: @tax-il-iv-tab-nav-border-left;
+@tax-il-iv-tab-nav-bg-color: @il-main-dark-bg;
+@tax-il-iv-tab-nav-color: @il-text-color;
+@tax-il-iv-tab-nav-bg-color-hover: @il-mainbar-btn-bg-color-engaged;
+//** Kommentare und Inhaltsverzeichnis
+@tax-il-iv-comment-scroll-text-border: @tax-il-iv-tab-border;
+@tax-il-iv-comment-scroll-text-padding: @il-padding-base @il-padding-xlarge-horizontal @il-padding-base @il-padding-base;
+@tax-il-iv-comment-scroll-text-time-color: @il-main-color;
+//** Kommentare Form
+@tax-il-iv-comments-form-control-label-font-size: 1rem;
+@tax-il-iv-comments-form-control-label-text-transform: uppercase;
+@tax-il-iv-comments-form-margin: @il-margin-xxxlarge-vertical 0px 0px 0px;
+@tax-il-iv-comments-form-padding: @il-padding-base 0px;
