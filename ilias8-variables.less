@@ -46,7 +46,7 @@ with the il- variable set here.
 //** Used if text is hovered in components such a Dropdowns
 @il-text-hover-color:		lighten(@il-text-color, 10%);
 //** Used e.g. for Bylines in Forms. Used to be @il-light-text-color. For accessibility reasons, the @il-text-color should only be used on the @il-main-bg.
-@il-text-light-color:		lighten(@il-text-color, 35%);
+@il-text-light-color:		lighten(@il-text-color, 45%);
 
 //** Used to be @link-color
 @il-link-color:		@il-text-color;
@@ -1022,6 +1022,7 @@ with the il- variable set here.
 @tax-il-mainbar-triggers-engaged-color: @il-text-color;
 @tax-il-mainbar-triggers-engaged-hover-color: @il-text-color;
 @tax-il-mainbar-triggers-disengaged-color: @il-text-color;
+@tax-il-mainbar-btn-disengaged-focus-visible-color: @il-text-color;
 
 //## Slates
 @tax-il-mainbar-slates-box-shadow: @tax-il-box-shadow;
@@ -1043,7 +1044,7 @@ with the il- variable set here.
 @tax-il-btn-standard-color-hover: @il-text-color;
 @tax-il-btn-standard-border-hover: 1px solid transparent;
 @tax-button-glyph-color: @il-text-color;
-@tax-il-btn-link-color-hover: @il-link-color;
+@tax-il-btn-link-color-hover: @il-link-hover-color;
 @tax-il-dropdown-button-bg-color: transparent;
 @tax-il-dropdown-button-color: @il-main-color;
 @tax-il-dropdown-button-bg-color-hover: darken(@il-main-dark-bg, 10%);
@@ -1067,13 +1068,15 @@ with the il- variable set here.
 @tax-il-copg-editarea-selected-border-color: @tax-il-highlight-color;
 @tay-il-copg-editarea-selected-border-width: 2px;
 @tax-il-copg-editarea-selected-border-style: solid;
+@tax-il-TinyInfo-h3-font-size: @il-font-size-large;
+@tax-il-ilc-bulletedlist-padding: 0px @il-padding-xlarge-horizontal 0px @il-padding-xlarge-horizontal;
 
 //## ContainerBlock
 @tax-il-box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; //rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 @tax-il-container-block-header-padding: @il-padding-large-vertical @il-padding-xs-horizontal @il-padding-large-vertical @il-padding-xs-horizontal;
 @tax-il-container-block-header-bg-color: transparent;
 @tax-il-container-block-border-top: 1px solid darken(@il-main-dark-bg, 5%);
-@tax-il-container-itemTitle-color: @il-neutral-light-color;
+@tax-il-container-ItemTitle-color: @il-neutral-light-color;
 @tax-il-container-ItemTitle-link-color: @il-text-color;
 @tax-il-container-ItemTitle-link-color-hover: @il-link-hover-color;
 @tax-il-container-ItemSection-color: lighten(@il-neutral-color,17%);
@@ -1082,6 +1085,8 @@ with the il- variable set here.
 @tax-il-container-block-header-expcoll-padding-left: 45px;
 @tax-il-container-block-header-font-weight: @il-font-weight-base;
 @tax-il-container-block-header-color: @il-text-color;
+@tax-il-container-ItemAlert-property: @il-danger-color; /* offline */
+
 
 /* List View */
 @tax-ilObjListRow-bg-color-hover: @il-main-dark-bg;
@@ -1104,8 +1109,9 @@ with the il- variable set here.
 //** Item
 @tax-il-item-divider-padding: 0;
 @tax-il-item-container-border-bottom: none;
-@tax-il-item-title-link-hover: @il-link-hover-color;
-@tax-il-container-ItemAlert-property: @il-danger-color; /* offline */
+@tax-il-item-title-link-color: @il-text-color;
+@tax-il-item-title-link-color-hover: @il-link-hover-color;
+@tax-il-std-item-bg-color-hover: @il-main-dark-bg;
 
 //## Card
 @tax-il-container-tile-rows-padding: @il-padding-large-vertical 0;
