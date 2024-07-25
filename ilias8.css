@@ -10852,15 +10852,15 @@ footer {
   -webkit-box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
-  background-color: #e5e3b3;
+  background-color: #f3fbaf;
   border-top: #dddddd none;
   border-bottom: #dddddd none;
   border-left: #dddddd none;
   border-right: #dddddd none;
-  color: #4c4a1a;
+  color: #687206;
 }
 .il-system-info.il-system-info-important a.glyph {
-  color: #4c4a1a;
+  color: #687206;
 }
 .il-system-info.il-system-info-breaking {
   -webkit-box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
@@ -11889,24 +11889,24 @@ with the il- variable set here.
   }
 }
 .extended-color-variant-1.il-extended-color-variant-standard {
-  color: #908c32;
-  background-color: #d5d286;
+  color: #b7ca0a;
+  background-color: #ebf875;
 }
 .extended-color-variant-1.il-extended-color-variant-light {
-  color: #bfba46;
-  background-color: #e7e6bb;
+  color: #dff422;
+  background-color: #f5fbb9;
 }
 .extended-color-variant-1.il-extended-color-variant-lighter {
-  color: #c1bd4d;
-  background-color: #f5f4e1;
+  color: #e0f42c;
+  background-color: #fcfee9;
 }
 .extended-color-variant-1.il-extended-color-variant-dark {
   color: #ffffff;
-  background-color: #c3be51;
+  background-color: #e1f531;
 }
 .extended-color-variant-1.il-extended-color-variant-darker {
   color: #ffffff;
-  background-color: #aeaa3d;
+  background-color: #daf10c;
 }
 .extended-color-variant-2.il-extended-color-variant-standard {
   color: #c43905;
@@ -14086,7 +14086,7 @@ li.ilFrmPostRow div.ilForm div.ilFormOption {
   margin: 0 0 3px;
 }
 li.ilModeratorPosting {
-  border-left: 6px solid #D5D286;
+  border-left: 6px solid #EBF875;
 }
 li.ilPostingNeedsActivation {
   border-left: 6px solid #A69FB3;
@@ -20635,21 +20635,21 @@ form .ilFormHeader .ilHeaderDesc {
 div.il_HeaderInner {
   padding-bottom: 15px;
 }
+div.il_HeaderInner div.ilHeaderDesc {
+  color: #7CFD98;
+  padding: 9px 0;
+  font-size: 1rem;
+}
 h1.il-page-content-header {
   color: #7CFD98;
 }
 #headerimage {
-  border-radius: 22px;
+  border-radius: 12px;
   padding: 6px;
-  box-shadow: 12px 12px 24px #4f5274, -12px -12px 24px #6b6e9e;
+  box-shadow: 4px 4px 16px #4f5274, -6px -6px 14px #6b6e9e;
 }
 .il-pagetitle {
   padding-left: 18px;
-}
-div.ilHeaderDesc {
-  color: #7CFD98;
-  padding: 9px 0;
-  font-size: 1rem;
 }
 div.ilHeaderAlert {
   color: white;
@@ -20879,7 +20879,7 @@ div.copg-current-edit,
   border-color: #7CFD98;
 }
 .ilc_list_u_BulletedList {
-  padding: 0px 15px 0px 15px;
+  padding: 0px 9px 0px 9px;
 }
 h3.ilTinyInfo {
   font-size: 1rem;
