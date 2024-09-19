@@ -39,11 +39,30 @@ h2.ilHeader.ilContainerBlockHeader {
 }
 
 .ilObjListRow {
-  border-bottom: @tax-ilObjListRow-border-bottom;
+  background-color: @tax-ilObjListRow-bg-color;
+  border-bottom: @tax-ilObjListRow-border;
+  border-top: @tax-ilObjListRow-border;
   &:hover {
+    border-top: @tax-ilObjListRow-border-hover;
+    border-bottom: @tax-ilObjListRow-border-hover;
     background-color: @tax-ilObjListRow-bg-color-hover;
-    transition: @tax-ilObjListRow-transition-hover;
-    border-radius: @tax-ilObjListRow-border-radius-hover;
+  }
+
+  &:first-child {
+    border-bottom: @tax-ilObjListRow-border;
+
+    &:hover {
+      border-top: @tax-ilObjListRow-border;
+      border-bottom: @tax-ilObjListRow-border-hover;
+    }
+  }
+
+  &:last-child {
+    border-bottom: @tax-ilObjListRow-border;
+
+    &:hover {
+      border-top: @tax-ilObjListRow-border-hover;
+    }
   }
 }
 

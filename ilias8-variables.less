@@ -961,6 +961,7 @@ with the il- variable set here.
 @tax-il-header-image-border-radius: 12px;
 @tax-il-header-image-box-shadow: 4px 4px 16px #4f5274, -6px -6px 14px #6b6e9e; //12px 12px 24px #4f5274, -12px -12px 24px #6b6e9e;
 @tax-il-header-image-padding: @il-padding-large-vertical; //Innenabstand zu Icon
+@tax-il-h1-header-padding: 0px; // Bündigkeit Icon zu Titel
 @tax-il-pagetitle-padding-left: @il-padding-xxxlarge-horizontal;
 @tax-il-pagetitle-margin-top: @il-padding-xxlarge-vertical+@il-padding-small-vertical;
 @tax-il-page-content-header-bg-color: @il-main-color;
@@ -970,6 +971,13 @@ with the il- variable set here.
 @tax-il-header-desc-color: @tax-il-header-color;
 @tax-il-header-desc-font-size: @il-font-size-large;
 @tax-il-header-desc-padding: @il-padding-base 0;
+@tax-il-media-HeaderInner-before-content: "\00a0";
+@tax-il-Head-Action-display: none; // entfernt "Aktionen" Label bei Top Actions
+// Small screen
+@tax-il-media-body-small-padding-left: 0px;
+@tax-il-header-image-small-width: 56px;
+@tax-il-header-image-small-height: 56px;
+@tax-il-header-image-small-margin-bottom: 10px;
 
 /* Alert Header */
 @tax-il-header-color: @tax-il-highlight-color;
@@ -1030,6 +1038,7 @@ with the il- variable set here.
 @tax-il-jstree-bg-position: @il-padding-small-horizontal 0 !important;
 @tax-il-jstree-link-color: @il-text-color !important;
 @tax-il-jstree-link-color-hover: @il-link-hover-color !important;
+@tax-il-slates-h4-divider-padding: @il-padding-base @il-padding-xxxlarge-horizontal;
 
 //## Drilldown
 @tax-il-drilldown-bg-color-hover: rgba(223,216,223,0.6);
@@ -1089,11 +1098,14 @@ with the il- variable set here.
 
 
 /* List View */
-@tax-ilObjListRow-bg-color-hover: @il-main-dark-bg;
 @tax-ilObjListRow-transition-hover: @tax-il-transition-base;
 @tax-ilObjListRow-border-radius-hover: @il-border-radius-base;
 @tax-il-container-ListItemOuter-padding: @il-padding-xxlarge-vertical @il-padding-xs-horizontal;
-@tax-ilObjListRow-border-bottom: none;
+@tax-ilObjListRow-border: 1px solid transparent;
+@tax-ilObjListRow-border-hover: 1px solid darken(@il-main-dark-bg, 3%); /*@il-main-darker-bg;*/
+@tax-ilObjListRow-bg-color: transparent;
+@tax-ilObjListRow-bg-color-hover: @il-main-dark-bg;
+
 
 /* Info Screen */
 @tax-il-InfoScreenPropertyValue-padding-top: 0px;
@@ -1174,6 +1186,10 @@ with the il- variable set here.
 @tax-il-form-help-block-link-color: @il-main-color;
 @tax-il-form-help-block-link-color-hover: @il-link-color;
 @tax-il-form-help-block-link-text-decoration: underline;
+
+//## Modal
+@tax-il-modal-InfoScreenPropertyValue-link-color: @il-link-hover-color;
+@tax-il-modal-InfoScreenPropertyValue-link-font-size: @il-font-size-base;
 
 //** Advanced Selection List
 @tax-il-dropdown-AdvSelListTable-padding-bottom: @il-padding-large-horizontal;
